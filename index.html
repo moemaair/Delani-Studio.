@@ -5,75 +5,96 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- link to style.css -->
-  <link rel="stylesheet" href="/IP3/styles.css">
+  <link rel="stylesheet" href="styles.css">
   <!-- link to bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <title>Delani Studio</title>
 </head>
-<body class="bg-black">
- <div class="container ">
-    <div class="hero-section d-flex">
+<body>
+ <div class="wrapper">
+    <div class="container-fluid hero-section d-flex flex-column justify-content-around pt-lg-5">
 
-      <section>
-        <img src="./logo/logo.png" alt="">
-        <h1 class="display-1">WELCOME</h1>
-        <h1 class="display-1">TO DELANI STUDIO</h1>
+      <section class="container text-center pt-4 ">
+        <img src="./assets/logo/logo.png" alt="" class="logo">
+        <h1 class="display-6">WELCOME</h1>
+        <h1 class="display-6">TO DELANI STUDIO</h1>
         <p>AMAZING PEOPLE ARE MAKING AMAZING DESIGN IN A FUN ENVIRONMENT</p>
       </section>
 
       <!-- mouse click -->
-      <img src="./mouse_click.png" alt="" class="mouse-click">
+      <img src="./assets/mouse_click.png" alt="" class="mouse-click align-self-center ">
     </div>
     <main>
       <!-- about us -->
       <section class="about-us bg-body container-fluid">
-        <section class="container">
+        <section class="container py-5 ">
           <h4 class="text-center">ABOUT US</h4>
         <p>When you work with us, you are part of a team of committed colaborators. All aspects of our software developement process
-          are intergrated, interactive and agile. <br> 
+          are intergrated, interactive <br> and agile. <br>  
           <span>Our approch unifies design, development and product management to craete exceptional products. We start each project by understanding your business goals, the user's needs and the product requirements</span>
           <span>Then we help traslate them into effective and elegant solutions</span>
         </p>
         </section>
       </section>
       <!-- service -->
-      <section class="services container-fluid">
-        <section class="container text-body">
-          <h4>SERVICES</h4>
+      <section class="services container-fluid py-5">
+        <section class="container text-body ">
+          <h4 class="pt-lg-5" text-white ">SERVICES</h4>
           <p>Before we sign a contract or write a line of code our team will spend the necessary time to understand your product vision <br> <span> the outcome of this scoping session is proposal or high-level statement of work. <br> <span>based on your requiremnts, we can provide acomplete offering or just the pieces you need.</span></span> </p>
         </section>
       </section>
       <!-- what we do + portfolio  -->
-      <div class="before-footer-section container">
-        <div class="what-we-do container-fluid d-flex justify-content-between">
+      <div class="before-footer-section container ">
+        <h4 class="py-4">WHAT WE DO</h4>
+        <div class="what-we-do container-fluid d-flex gap-4 flex-lg-row justify-content-between flex-column ">
           <!-- left -->
           <div class="left">
-            <p></p>  
-            <img src="./services_icons/design_icon.png" alt="">
+            <section class="service-description">
+              <h6>DESIGN</h6>
+              <p></p>
+            </section>
+           
+            <img src="./assets/services_icons/design_icon.png" alt="" class="services-icon" id="design-icon">
           </div>
           <!-- middle -->
           <div class="middle">
-            <p></p>       
-            <img src="./services_icons/dev_icon.png" alt="">
+            <section class="service-description">
+              <h6>DEVELOPMENT</h6>
+              <p></p> 
+            </section>
+                  
+            <img src="./assets/services_icons/dev_icon.png" alt="" class="services-icon " id="development-icon" >
           </div>
           <!-- right -->
           <div class="right">
-            <p></p>  
-            <img src="./services_icons/product_icon.png" alt="">
+            <section class="service-description">
+              <h6>PRODUCT MANAGEMENT</h6>
+              <p></p>
+            </section>
+            
+            <img src="./assets/services_icons/product_icon.png" alt="" class="services-icon" id="PM-icon">
           </div>
 
         </div>
-        <div class="porfolio">
-          <h4 class="text-center">PORTFOLIO</h4>
+        <div class="porfolio pt-5">
+          <h4 class="text-center py-4">PORTFOLIO</h4>
           <section class="container">
-            <img src="./portfolio/work1.jpg" alt="">
-            <img src="./portfolio/work2.jpg" alt="">
-            <img src="./portfolio/work3.jpg" alt="">
-            <img src="./portfolio/work4.jpg" alt="">
-            <img src="./portfolio/work5.jpg" alt="">
-            <img src="./portfolio/work6.jpg" alt="">
-            <img src="./portfolio/work7.jpg" alt="">
-            <img src="./portfolio/work8.jpg" alt="">
+           <div class="row py-4 ">
+            <img src="./assets/portfolio/work4.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work3.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work2.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work1.jpg" alt="" class="col-lg-3 col-sm pt-4">
+          </div>
+          <div class="row py-4">
+            <img src="./assets/portfolio/work5.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work6.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work7.jpg" alt="" class="col-lg-3 col-sm pt-4">
+            <img src="./assets/portfolio/work8.jpg" alt="" class="col-lg-3 col-sm pt-4">
+          </div>
           </section>
         </div>
       </div>
@@ -82,20 +103,28 @@
       <div class="form-section">
       
       </div>
-      <div class="social-section">
-        <img src="./social_icons/twitter.png" alt="">
-        <img src="./social_icons/dribble.png" alt="">
-        <img src="./social_icons/facebook.png" alt="">
-        <img src="./social_icons/g_plus.png" alt="">
-        <img src="./social_icons/skype.png" alt="">
-        <img src="./social_icons/stumble_upon.png" alt="">
-        <img src="./social_icons/behance.png" alt="">
-        <img src="./social_icons/pinterest.png" alt="">
-        <img src="./social_icons/flickr.png" alt="">
-      </div>
-      <!-- copyright -->
+      <div class=" container social-section d-flex my-lg-5 justify-content-center">
+        <div class="row">
+          <img src="./assets/social_icons/twitter.png" alt="">
+        <img src="./assets/social_icons/dribble.png" alt="">
+        <img src="./assets/social_icons/facebook.png" alt="">
+        </div>
+        <div class="row ">
+          <img src="./assets/social_icons/g_plus.png" alt="">
+        <img src="./assets/social_icons/skype.png" alt="">
+        <img src="./assets/social_icons/stumble_upon.png" alt="">
+        </div>
+        <div class=" row">
+          <img src="./assets/social_icons/behance.png" alt="">
+        <img src="./assets/social_icons/pinterest.png" alt="">
+        <img src="./assets/social_icons/flickr.png" alt="">
+        </div>
+        
+        
+      </div> 
+      <!-- copyright-->
 
-      <div class="copyright text-center">
+      <div class="copyright text-center text-black">
         <h5>DELANI STUDIO</h5>
         <p>2019</p>
       </div>
@@ -105,6 +134,6 @@
 
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="/IP3/main.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
