@@ -5,11 +5,16 @@
   font-family: 'Poppins', sans-serif;
   
 }
+html{
+  scroll-behavior: smooth;
+}
 /* all heading H4 and p in this project */
 h4, p{
   text-align: center;
   line-height: 2.0;
 }
+
+
 
 /* hero-section */
 .hero-section {
@@ -23,8 +28,19 @@ h4, p{
   color: white;
 }
 /* mouse-click */
-.mouse-click{
+a{
   margin-top: 18rem;
+}
+.animation{
+  animation: mouse-scroll 2s ease-in-out infinite;
+}
+@keyframes mouse-scroll  {
+  0%, 60%, 100%{
+    transform: translateY(-5px);
+  }
+  40%, 80%{
+    transform: translateY(5px);
+  }
 }
 
 
@@ -33,6 +49,10 @@ h4, p{
  
   justify-content: center;
   align-items: center;
+}
+.social-section .row{
+  margin: 0 2rem;
+  gap: 10px;
 }
 }
 
@@ -44,6 +64,12 @@ h4, p{
 .about-us section{
   min-height: 30vh;
 }
+/* portfolio */
+/* what we do */
+.what-we-do p{
+  display: none;
+}
+
 
 /* service */
 .services{
@@ -55,5 +81,30 @@ background-position: center;
 }
 .services h4{
   color: white;
+}
+/* form */
+.form-section{
+  background: url(./assets/backgrounds/c_image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;  
+  min-height: 50vh;
+}
+input::placeholder{
+  color: white;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+
+}
+#message::placeholder{
+  color: white;
+}
+input{
+  border: 2px solid red;
+  padding: 2px 20px;
+}
+
+input,textarea{
+  border: 1px solid white;
 }
 
