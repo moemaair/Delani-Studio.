@@ -26,11 +26,12 @@
       </section>
 
       <!-- mouse click -->
-      <img src="./assets/mouse_click.png" alt="" class="mouse-click align-self-center ">
+      <a href="#about-us" class="align-self-center"><img src="./assets/mouse_click.png" alt="" class="mouse-click animation">
+      </a>
     </div>
     <main>
       <!-- about us -->
-      <section class="about-us bg-body container-fluid">
+      <section class="about-us bg-body container-fluid " id="about-us">
         <section class="container py-5 ">
           <h4 class="text-center">ABOUT US</h4>
         <p>When you work with us, you are part of a team of committed colaborators. All aspects of our software developement process
@@ -44,77 +45,98 @@
       <section class="services container-fluid py-5">
         <section class="container text-body ">
           <h4 class="pt-lg-5" text-white ">SERVICES</h4>
-          <p>Before we sign a contract or write a line of code our team will spend the necessary time to understand your product vision <br> <span> the outcome of this scoping session is proposal or high-level statement of work. <br> <span>based on your requiremnts, we can provide acomplete offering or just the pieces you need.</span></span> </p>
         </section>
+        <p>Before we sign a contract or write a line of code our team will spend the necessary time to understand your product vision <br> <span> the outcome of this scoping session is proposal or high-level statement of work. <br> <span>based on your requiremnts, we can provide acomplete offering or just the pieces you need.</span></span> </p>
+
       </section>
       <!-- what we do + portfolio  -->
-      <div class="before-footer-section container ">
+      <div class="before-footer-section container px-lg-5 ">
         <h4 class="py-4">WHAT WE DO</h4>
+        <!-- what we do section -->
         <div class="what-we-do container-fluid d-flex gap-4 flex-lg-row justify-content-between flex-column ">
           <!-- left -->
           <div class="left">
             <section class="service-description">
-              <h6>DESIGN</h6>
-              <p></p>
+              <img src="./assets/services_icons/design_icon.png" alt=""  class="services-icon" id="design-icon">
+              <h6 class="pt-3 ">DESIGN</h6>
             </section>
+            <p class=" text-dark" id='text-content-design'>Our design pracrice</p>
+
            
-            <img src="./assets/services_icons/design_icon.png" alt="" class="services-icon" id="design-icon">
           </div>
           <!-- middle -->
           <div class="middle">
             <section class="service-description">
-              <h6>DEVELOPMENT</h6>
-              <p></p> 
+              <img src="./assets/services_icons/dev_icon.png" alt="" class="services-icon  " id="development-icon" >
+              <h6 class="pt-3">DEVELOPMENT</h6>
             </section>
+            <p class="text-dark" id='text-content-dev'>lol</p> 
+
                   
-            <img src="./assets/services_icons/dev_icon.png" alt="" class="services-icon " id="development-icon" >
           </div>
           <!-- right -->
           <div class="right">
             <section class="service-description">
-              <h6>PRODUCT MANAGEMENT</h6>
-              <p></p>
+              <img src="./assets/services_icons/product_icon.png" alt="" class="services-icon " id="PM-icon">
+
+              <h6 class="pt-3">PRODUCT MANAGEMENT</h6>
             </section>
-            
-            <img src="./assets/services_icons/product_icon.png" alt="" class="services-icon" id="PM-icon">
+            <p class="text-dark" id='text-content-product'>hey</p>
+
           </div>
 
         </div>
-        <div class="porfolio pt-5">
+        <!-- potfolio section -->
+        <div class="contatainer porfolio pt-5">
           <h4 class="text-center py-4">PORTFOLIO</h4>
+
           <section class="container">
-           <div class="row py-4 ">
-            <img src="./assets/portfolio/work4.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work3.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work2.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work1.jpg" alt="" class="col-lg-3 col-sm pt-4">
-          </div>
-          <div class="row py-4">
-            <img src="./assets/portfolio/work5.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work6.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work7.jpg" alt="" class="col-lg-3 col-sm pt-4">
-            <img src="./assets/portfolio/work8.jpg" alt="" class="col-lg-3 col-sm pt-4">
-          </div>
-          </section>
+            <div class="row py-4 ">
+              <img src="./assets/portfolio/work4.jpg" alt=""class="col-lg-3 col-sm pt-4" >
+             <img src="./assets/portfolio/work3.jpg" alt="" class="col-lg-3 col-sm pt-4">
+             <img src="./assets/portfolio/work2.jpg" alt="" class="col-lg-3 col-sm pt-4">
+             <img src="./assets/portfolio/work1.jpg" alt="" class="col-lg-3 col-sm pt-4">
+           </div>
+           <div class="row py-4">
+             <img src="./assets/portfolio/work5.jpg" alt="" class="col-lg-3 col-sm pt-4">
+             <img src="./assets/portfolio/work6.jpg" alt="" class="col-lg-3 col-sm pt-4">
+             <img src="./assets/portfolio/work7.jpg" alt="" class="col-lg-3 col-sm pt-4">
+             <img src="./assets/portfolio/work8.jpg" alt="" class="col-lg-3 col-sm pt-4">
+           </div>
+           </section>
+             
+        
         </div>
       </div>
     </main>
     <footer>
-      <div class="form-section">
-      
+      <!-- form -->
+      <div class=" container-fluid form-section bg-light my-5">
+        <h4 class="py-4 text-light">CONTACT US</h4>
+        <!-- form section -->
+        <form action="" class="d-flex flex-column justify-content-center align-items-center gap-3 py-4 ">
+       <section class="d-flex gap-4 flex-column flex-lg-row input ">
+         <input type="text" class="name "  placeholder="Name...">
+         <input type="text" class="email" placeholder="Email...">
+       </section>
+         <textarea name="message" id="message" cols="30" rows="10" class="w-50"></textarea>
+        
+        </form>
+
       </div>
-      <div class=" container social-section d-flex my-lg-5 justify-content-center">
-        <div class="row">
-          <img src="./assets/social_icons/twitter.png" alt="">
+
+      <div class=" container social-section d-flex justify-content-center ">
+        <div class="row row-cols-md-3 ">
+        <img src="./assets/social_icons/twitter.png" alt="" >
         <img src="./assets/social_icons/dribble.png" alt="">
         <img src="./assets/social_icons/facebook.png" alt="">
         </div>
-        <div class="row ">
+        <div class="row row-cols-md-3">
           <img src="./assets/social_icons/g_plus.png" alt="">
         <img src="./assets/social_icons/skype.png" alt="">
         <img src="./assets/social_icons/stumble_upon.png" alt="">
         </div>
-        <div class=" row">
+        <div class="row row-cols-md-3">
           <img src="./assets/social_icons/behance.png" alt="">
         <img src="./assets/social_icons/pinterest.png" alt="">
         <img src="./assets/social_icons/flickr.png" alt="">
@@ -122,11 +144,12 @@
         
         
       </div> 
+    
       <!-- copyright-->
 
-      <div class="copyright text-center text-black">
+      <div class="copyright text-center text-black py-3">
         <h5>DELANI STUDIO</h5>
-        <p>2019</p>
+        <p class="text-dark">2019</p>
       </div>
     </footer>
  </div>
