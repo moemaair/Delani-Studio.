@@ -25,7 +25,7 @@ Description About:
  * BOOTSTRAP
  * Mail chip API
  * GIT
- * JAVASCRIPT 
+ * JAVASCRIPT (Jquery)
 
 ### Download & Installation
 check ⬇ to have a copy of my Project
