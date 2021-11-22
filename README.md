@@ -41,7 +41,7 @@ $ git clone git@github.com:moemaair/Delani-Studio..git
 ```
 ### Screenshots
 
-![Desktop Screenshoot](/Users/maair/Desktop/Delani-studio/ Delani Studio.jpg)
+![Desktop Screenshoot](/Delani-Studio.jpg)
 ![Mobile Screenshoot]()
 ### Authors or Acknowledgments
 
