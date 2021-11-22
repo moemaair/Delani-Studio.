@@ -1,20 +1,7 @@
 $(document).ready(function (){
-  $('h4').css('fontWeight','700');
-  $('.portfolio-img').hover(function (){
-   $(this).css('opacity','0.6');
-  },function (){
-    $(this).css('opacity','1');
-  })
-
-
-  // form
-  $('form').keypress(()=>{
-    console.log('hey')
-  })
-  $('input,textarea').css('backgroundColor','transparent');
-  $('input,textarea').css('border','2'+'px'+'white');
 
 // what-we-do
+
 // left
 $('#design-icon').hover(function(){
   $(this).css('display','none')
@@ -26,7 +13,7 @@ $('#design-icon').hover(function(){
 })
 
 
-// // middle
+// middle
 $('#development-icon').hover(function(){
   $(this).css('display','none')
   $('#text-content-dev').css('display','block')
@@ -35,14 +22,8 @@ $('#development-icon').hover(function(){
   $('#text-content-dev').css('display','none')
 
 })
-// $('#development-icon').hover(function(){
-//   $(this).css('display','block');
 
-// },function(){
-//     $(this).css('display','block');
-
-// })
-// // right
+// right
 $('#PM-icon').hover(function(){
   $(this).css('display','none')
   $('#text-content-product').css('display','block')
@@ -51,19 +32,18 @@ $('#PM-icon').hover(function(){
   $('#text-content-product').css('display','none')
 
 })
-// $('#PM-icon').hover(function(){
-//   $(this).css('display','none');
+ $('.text-content').css('text-align','center');
+ $('.what-we-do h6').css('fontWeight','bold');
 
-// },function(){
-//     $(this).css('display','block');
+ 
+// form
+$('input,textarea').css('backgroundColor','transparent');
+$('input,textarea').css('border','2'+'px'+'white');
 
-// })
-// $('.what-we-do img').hover(function(){
-//   $(this).css('display','none')
-// }, function(){
-//   $(this).css('display','block')
-
-// })
-
+ $('#submit').click(()=>{
+   var name = $('.name').val()
+   alert(`${name } we have received your message. Thank you for reaching out to us.`)
+ })
+ 
 
 });
