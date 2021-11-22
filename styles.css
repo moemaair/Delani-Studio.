@@ -71,6 +71,7 @@ a{
 }
 
 
+
 /* service */
 .services{
 background: url(./assets/backgrounds/s_image.jpg)no-repeat;
@@ -83,28 +84,55 @@ background-position: center;
   color: white;
 }
 /* form */
-.form-section{
+.form-section  {
   background: url(./assets/backgrounds/c_image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;  
   min-height: 50vh;
-}
-input::placeholder{
-  color: white;
-  font-size: 12px;
-  font-family: 'Poppins', sans-serif;
 
 }
-#message::placeholder{
+input,textarea{
+  padding:20px ;
+  color: white;
+  font-size: 9px;
+}
+.text-content{
+  width: 400px;
+  height: 100px;
+}
+#submit{
+  border: none;
+}
+#message{
+  width: 50%;
+}
+
+
+
+@media screen and (max-width: 768px){
+  #design-icon{
+    padding-right: 50px;
+  }
+  .left h6{
+    padding-left: 20px;
+  }
+  #PM-icon{
+    margin-left: 40px;
+  }
+ #message{
+   width: 100%;
+ }
+}
+
+input::placeholder{
   color: white;
 }
 input{
-  border: 2px solid red;
   padding: 2px 20px;
 }
 
-input,textarea{
+input[type="text"],textarea{
   border: 1px solid white;
 }
 
