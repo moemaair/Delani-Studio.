@@ -5,10 +5,7 @@ Project Title - DELANI STUDIO 2019
 Description About:
 
 * * *
-
-
-
-
+Delani stsudio is a website for design driven website that joins talented designers to work with each other. 
 
 
 ### ≠≠≠ Demo ≠≠≠ 
@@ -44,7 +41,7 @@ $ git clone git@github.com:moemaair/Delani-Studio..git
 ```
 ### Screenshots
 
-![Desktop Screenshoot]()
+![Desktop Screenshoot](/Delani Studio.jpg)
 ![Mobile Screenshoot]()
 ### Authors or Acknowledgments
 
